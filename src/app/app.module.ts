@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PaymentComponent } from './payment/payment.component';
+import { BookingComponent } from './booking/booking.component';
 
 const appRoutes:Routes=[
   {
@@ -18,6 +19,9 @@ const appRoutes:Routes=[
   },
   {
     path:"payment",component:PaymentComponent
+  },
+  {
+    path:"booking",component:BookingComponent
   }
 ]
 
@@ -27,7 +31,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     HomeComponent,
     GalleryComponent,
-    PaymentComponent
+    PaymentComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
