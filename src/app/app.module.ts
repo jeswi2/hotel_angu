@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PaymentComponent } from './payment/payment.component';
 
 const appRoutes:Routes=[
   {
@@ -14,6 +15,9 @@ const appRoutes:Routes=[
   },
   {
     path:"Gala",component:GalleryComponent
+  },
+  {
+    path:"payment",component:PaymentComponent
   }
 ]
 
@@ -22,7 +26,8 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
